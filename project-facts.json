@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "name": "BAGSY",
+  "symbol": "BAGSY",
+  "chain": "Solana",
+  "officialMint": "GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump",
+  "officialLinks": {
+    "website": "https://bagsy.fun/",
+    "communityKit": "https://bagsy.fun/community.html",
+    "market": "https://pump.fun/coin/GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump",
+    "x": "https://x.com/BagsyAgent",
+    "telegramCommunity": "https://t.me/BagsyAgent",
+    "telegramAnnouncements": "https://t.me/BagsyAnnouncements",
+    "source": "https://github.com/bagsyfun-ctrl/bagsy-agent"
+  },
+  "onChainSnapshot": {
+    "date": "2026-08-20",
+    "creatorWallet": "HaUPmwFVQ6bccZnwrUfesbvqGSGeVbVUGoN3joyZR2vb",
+    "creatorSupplyPercent": 15.1661,
+    "mintAuthority": null,
+    "freezeAuthority": null,
+    "marketState": "pump.fun bonding curve",
+    "graduated": false,
+    "canonicalPumpSwapLiquidityExists": false
+  },
+  "snapshotWarning": "Distribution and market state can change after the snapshot date. Verify live data independently before relying on it.",
+  "riskStatement": "BAGSY is a speculative meme token with no product revenue, promised value or guaranteed return. It may lose all value. Nothing in the official channels is financial, legal or tax advice."
+}
