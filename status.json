@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "checkedAt": "2026-08-21T02:17:37.107117Z",
+  "officialMint": "GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump",
+  "market": {
+    "complete": false,
+    "usdMarketCap": 3790.54,
+    "realSolReserves": 6.9765,
+    "lastTradeAt": "2026-08-20T20:36:45Z"
+  },
+  "holders": {
+    "nonCurveWallets": 5,
+    "walletsBeyondCreator": 4,
+    "definition": "Distinct on-chain wallet owners with a nonzero token balance, excluding the pump.fun bonding-curve owner. Wallets do not necessarily equal individual people."
+  },
+  "distribution": {
+    "creatorWallet": "HaUPmwFVQ6bccZnwrUfesbvqGSGeVbVUGoN3joyZR2vb",
+    "creatorSupplyPercent": 15.1661
+  },
+  "sources": {
+    "market": "https://frontend-api-v3.pump.fun/coins/GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump",
+    "rpc": "https://api.mainnet-beta.solana.com"
+  },
+  "warning": "This is a timestamped public-data snapshot, not financial advice. Values can change after checkedAt and should be verified independently."
+}

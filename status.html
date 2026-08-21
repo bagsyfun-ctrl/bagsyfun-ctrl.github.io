@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BAGSY Live Status — public curve and wallet snapshot</title>
+<meta name="description" content="Timestamped public BAGSY curve, holder-wallet and creator-distribution data from pump.fun and Solana RPC.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://bagsy.fun/status.html">
+<meta property="og:title" content="BAGSY Live Status — verify the bag">
+<meta property="og:description" content="Timestamped curve, wallet and distribution facts from public data sources.">
+<meta property="og:image" content="https://bagsy.fun/BAGSY-transparency-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--mint:#2ee6a6;--ink:#0b1d2a;--ink2:#143247;--coral:#ff6b6b;--paper:#f5fbf8;--muted:#cfe9dd}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--ink);color:#eaf6f0;line-height:1.55}a{color:var(--mint)}.wrap{max-width:1050px;margin:auto;padding:0 20px}.top{border-bottom:1px solid rgba(46,230,166,.18);background:rgba(11,29,42,.94)}.top .wrap{height:64px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:950;font-size:20px;color:#fff;text-decoration:none}.nav{display:flex;gap:18px;align-items:center}.nav a{text-decoration:none;font-weight:750}.hero{padding:76px 0 42px}.eyebrow{color:var(--coral);font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:10px 0 18px;color:#fff}.hero h1 span{color:var(--mint)}.lead{font-size:19px;color:var(--muted);max-width:720px}.stamp{display:inline-block;margin-top:12px;padding:7px 12px;border:1px solid rgba(46,230,166,.4);border-radius:999px;color:var(--mint);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--ink2);border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:22px}.label{color:#93b9a8;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.07em}.value{font-size:38px;font-weight:950;color:#fff;margin:4px 0}.card p{color:var(--muted);margin-bottom:0}.truth{margin:32px 0;background:rgba(255,107,107,.08);border:1px solid rgba(255,107,107,.32);border-radius:16px;padding:18px;color:#f5dcdc}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}.button{display:inline-block;background:var(--mint);color:var(--ink);font-weight:900;text-decoration:none;padding:11px 18px;border-radius:999px}.button.alt{background:transparent;color:var(--mint);border:1px solid var(--mint)}section{padding:30px 0}h2{font-size:32px;color:#fff;margin:0 0 16px}footer{margin-top:42px;padding:34px 0 54px;border-top:1px solid rgba(255,255,255,.08);color:#8fb3a3;font-size:13px}@media(max-width:760px){.grid{grid-template-columns:1fr}.nav a:not(.button){display:none}.value{font-size:34px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="/">BAGSY</a><nav class="nav"><a href="community.html">Community kit</a><a href="project-facts.json">Official facts</a><a class="button" href="https://t.me/BagsyAgent" target="_blank" rel="noopener">Join community</a></nav></div></header>
+<main class="wrap">
+  <section class="hero"><div class="eyebrow">Public-data dashboard</div><h1>Watch the bag. <span>Verify the facts.</span></h1><p class="lead">This page reports timestamped public data from pump.fun and Solana RPC. It does not forecast price or graduation. The wallet counts below are on-chain addresses, not verified individual people.</p><div class="stamp" id="checked">Loading latest snapshot…</div></section>
+  <section aria-label="Current BAGSY public status">
+    <div class="grid">
+      <article class="card"><div class="label">Curve status</div><div class="value" id="curve">—</div><p>No canonical PumpSwap liquidity pool exists before graduation.</p></article>
+      <article class="card"><div class="label">Real SOL reserves</div><div class="value" id="sol">—</div><p>Public pump.fun curve snapshot. This figure can move in either direction.</p></article>
+      <article class="card"><div class="label">Approx. market cap</div><div class="value" id="mcap">—</div><p>Volatile context, not a campaign target or promise.</p></article>
+      <article class="card"><div class="label">Non-curve wallets</div><div class="value" id="wallets">—</div><p>Distinct wallet owners with nonzero balances, excluding the bonding curve.</p></article>
+      <article class="card"><div class="label">Beyond creator</div><div class="value" id="external">—</div><p>Non-curve wallets other than the disclosed creator wallet.</p></article>
+      <article class="card"><div class="label">Creator snapshot</div><div class="value" id="creator">—</div><p>Creator share of on-chain supply at the snapshot time.</p></article>
+    </div>
+    <div class="truth"><strong>Interpret carefully.</strong> One person can control several wallets, and one wallet can represent a service or many people. Market cap and reserves can change after the timestamp. Always verify the exact CA: <code>GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump</code>.</div>
+    <div class="actions"><a class="button" href="https://pump.fun/coin/GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump" target="_blank" rel="noopener">Verify on pump.fun</a><a class="button alt" href="community.html">Create with the kit</a><a class="button alt" href="https://github.com/bagsyfun-ctrl/bagsy-agent" target="_blank" rel="noopener">Improve the agent</a></div>
+  </section>
+</main>
+<footer><div class="wrap">Public information only · speculative meme token · not financial advice · <a href="/">BAGSY home</a></div></footer>
+<script>
+const number = new Intl.NumberFormat('en-US',{maximumFractionDigits:2});
+fetch('status.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('status unavailable');return r.json()}).then(s=>{
+  document.getElementById('checked').textContent='Checked '+new Date(s.checkedAt).toLocaleString();
+  document.getElementById('curve').textContent=s.market.complete?'Graduated':'On curve';
+  document.getElementById('sol').textContent=number.format(s.market.realSolReserves)+' SOL';
+  document.getElementById('mcap').textContent='$'+number.format(s.market.usdMarketCap);
+  document.getElementById('wallets').textContent=number.format(s.holders.nonCurveWallets);
+  document.getElementById('external').textContent=number.format(s.holders.walletsBeyondCreator);
+  document.getElementById('creator').textContent=number.format(s.distribution.creatorSupplyPercent)+'%';
+}).catch(()=>{document.getElementById('checked').textContent='Latest snapshot temporarily unavailable — use the official pump.fun link below.'});
+</script>
+</body>
+</html>
