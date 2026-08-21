@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "checkedAt": "2026-08-21T02:49:43.845658Z",
+  "checkedAt": "2026-08-21T08:07:39.624667Z",
   "officialMint": "GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump",
   "market": {
     "complete": false,
-    "usdMarketCap": 3815.58,
+    "usdMarketCap": 3850.78,
     "realSolReserves": 6.9765,
-    "lastTradeAt": "2026-08-20T20:36:45Z"
+    "lastTradeAt": "2026-08-21T04:42:05Z"
   },
   "holders": {
     "nonCurveWallets": 5,
