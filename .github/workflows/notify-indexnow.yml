@@ -1,0 +1,26 @@
+name: Notify IndexNow
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "*.json"
+      - "*.png"
+      - "sitemap.xml"
+      - "scripts/submit_indexnow.py"
+      - ".github/workflows/notify-indexnow.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Allow Pages deployment to propagate
+        run: sleep 90
+      - name: Submit official URLs
+        run: python scripts/submit_indexnow.py

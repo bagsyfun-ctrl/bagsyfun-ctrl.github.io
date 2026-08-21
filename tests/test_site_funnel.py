@@ -1,4 +1,5 @@
 import json
+import sys
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
@@ -6,6 +7,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MINT = "GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump"
+sys.path.insert(0, str(ROOT / "scripts"))
+import submit_indexnow
 
 
 class LinkCollector(HTMLParser):
@@ -41,6 +44,12 @@ class SiteFunnelTests(unittest.TestCase):
         asset = ROOT / "BAGSY-build-public.png"
         self.assertTrue(asset.exists())
         self.assertGreater(asset.stat().st_size, 100_000)
+
+    def test_indexnow_ownership_and_urls(self):
+        key_file = ROOT / f"{submit_indexnow.KEY}.txt"
+        self.assertEqual(key_file.read_text(encoding="utf-8").strip(), submit_indexnow.KEY)
+        self.assertEqual(submit_indexnow.payload()["keyLocation"], submit_indexnow.KEY_LOCATION)
+        self.assertIn("https://bagsy.fun/share.html", submit_indexnow.URLS)
 
 
 if __name__ == "__main__":
