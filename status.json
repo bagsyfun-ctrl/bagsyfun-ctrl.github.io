@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "checkedAt": "2026-08-21T02:17:37.107117Z",
+  "checkedAt": "2026-08-21T02:49:43.845658Z",
   "officialMint": "GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump",
   "market": {
     "complete": false,
-    "usdMarketCap": 3790.54,
+    "usdMarketCap": 3815.58,
     "realSolReserves": 6.9765,
     "lastTradeAt": "2026-08-20T20:36:45Z"
   },
