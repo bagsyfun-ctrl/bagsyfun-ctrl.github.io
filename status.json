@@ -1,16 +1,16 @@
 {
   "schemaVersion": "1.0",
-  "checkedAt": "2026-08-22T13:45:17.555617Z",
+  "checkedAt": "2026-08-22T19:04:01.119847Z",
   "officialMint": "GUAFAP1wtFK2R79y5mCpumZA4yR2R9bNrZs7yB2epump",
   "market": {
     "complete": false,
-    "usdMarketCap": 3921.31,
-    "realSolReserves": 6.6581,
-    "lastTradeAt": "2026-08-21T21:10:27Z"
+    "usdMarketCap": 3819.82,
+    "realSolReserves": 6.0872,
+    "lastTradeAt": "2026-08-22T18:22:59Z"
   },
   "holders": {
-    "nonCurveWallets": 4,
-    "walletsBeyondCreator": 3,
+    "nonCurveWallets": 2,
+    "walletsBeyondCreator": 1,
     "definition": "Distinct on-chain wallet owners with a nonzero token balance, excluding the pump.fun bonding-curve owner. Wallets do not necessarily equal individual people."
   },
   "distribution": {
